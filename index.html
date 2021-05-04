@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Complex flexbox example</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+                 margin: 0;
+                 font-family: Lato, sans-serif;
+               }
+
+               header {
+                 font-family: Lato, sans-serif;
+                 background: purple;
+                 height: 100px;
+                 display: flex;
+                 place-content: end;
+
+               }
+
+               h1 {
+                 text-align: center;
+                 color: white;
+                 line-height: 100px;
+                 margin-right: 200px;
+               }
+
+               .top div{
+                 padding: 15px;
+                 margin: 5px;
+                 background: pink;
+                 flex: 1;
+                 border: 5px solid black;
+                 border-radius: 5px;
+                 text-align: center;
+                 font-size: 2em;
+               }
+
+               .projects {
+                 padding: 5x;
+                 margin: 5px;
+                 background: aqua;
+               }
+
+               aside {
+                 padding: 5px;
+                 margin: 5px;
+                 background: aqua;
+               }
+
+              .sub {
+                 padding: 2px;
+                 margin: 2px;
+                 background: white;
+               }
+
+               .nested {
+                 padding: 5px;
+                 margin: 5px;
+                 background: white;
+                 border: 5px solid black;
+                 border-radius: 5px;
+
+               }
+
+               /* Add your flexbox CSS below here */
+
+               section {
+                 display: flex;
+                 font-family: Lato, sans-serif;
+               }
+
+               div.projects {
+                 display: flex;
+                 flex-wrap: wrap;
+                 flex: 2 200px;
+                 border: 5px solid black;
+                 border-radius: 5px;
+                 text-align: center;
+               }
+
+               .sub {
+                 flex: 250px;
+                 border: 5px solid black;
+                 border-radius: 5px;
+                 text-align: center;
+               }
+
+               aside {
+                 flex: 1 150px;
+                 border: 5px solid black;
+                 border-radius: 5px;
+                 text-align: center;
+               }
+                 .nested {
+                 flex: 200px;
+               }
+
+               button {
+                 flex: 1 auto;
+                 margin: 5px;
+                 font-size: 18px;
+                 line-height: 1.5;
+               }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> Home | Apollo | Mercury | Shuttle | Photo Gallery </h1>
+    </header>
+
+    <section class="top">
+     <div>Welcome Gemini!</div>
+    </section>
+
+    <section>
+      <div class="projects">
+        <h2>Active Missions</h2>
+
+        <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+          pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+          carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+          PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+        </p>
+          <div class="sub">
+            <h3>Apollo</h3>
+              <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+                 pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                  carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                   PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+              </p>
+          </div>
+          <div class="sub">
+            <h3>Mercury</h3>
+              <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+                 pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                  carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                   PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+              </p>
+          </div>
+          <div class="sub">
+            <h3>Project 3</h3>
+              <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+                 pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                  carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                   PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+              </p>
+          </div>
+          <div class="sub">
+            <h3>Project 4</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+               pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                 PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+            </p>
+          </div>
+          <div class="sub">
+            <h3>Project 5</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+               pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                 PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+            </p>
+          </div>
+          <div class="sub">
+            <h3>Project 6</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny
+               pack portland everyday carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday
+                carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed.
+                 PBR&amp;B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.
+            </p>
+          </div>
+
+      </div>
+
+      <aside>
+        <div class="nested">
+          <h3>Astronaut of the Week</h3>
+          <div>
+            <button>Smile</button>
+            <button>Laugh</button>
+            <button>Wink</button>
+            <button>Shrug</button>
+            <button>Blush</button>
+          </div>
+          <div>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+               carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday carry ennui pickled sriracha normcore
+               hashtag polaroid single-origin coffee cold-pressed. PBR&amp;B tattooed trust fund twee, leggings salvia
+              iPhone photo booth health goth gastropub hammock.
+              Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                 carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday carry ennui pickled sriracha normcore
+                 hashtag polaroid single-origin coffee cold-pressed. PBR&amp;B tattooed trust fund twee, leggings salvia
+                iPhone photo booth health goth gastropub hammock.</p>
+          </div>
+
+        </div>
+
+        <div class="nested">
+          <h3>Latest Pilot Program</h3>
+          <div>
+            <button>Smile</button>
+            <button>Laugh</button>
+            <button>Wink</button>
+            <button>Shrug</button>
+            <button>Blush</button>
+          </div>
+          <div>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+               carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday carry ennui pickled sriracha normcore
+               hashtag polaroid single-origin coffee cold-pressed. PBR&amp;B tattooed trust fund twee, leggings salvia
+              iPhone photo booth health goth gastropub hammock.
+              Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday
+                 carry vinyl typewriter. Tacos PBR&amp;B pork belly, everyday carry ennui pickled sriracha normcore
+                 hashtag polaroid single-origin coffee cold-pressed. PBR&amp;B tattooed trust fund twee, leggings salvia
+                iPhone photo booth health goth gastropub hammock.</p>
+          </div>
+
+        </div>
+      </aside>
+
+
+    </section>
+
+
+</body>
+</html>
